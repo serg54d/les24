@@ -1,0 +1,149 @@
+@import "_mixins";
+// @import "_fonts";
+@import "_null";
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700&display=swap");
+
+// &display=swap
+// &subset=cyrillic-ext
+//
+
+$containerWidth: 1410px;
+
+//брейк-поинты
+
+$pc: $containerWidth; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S
+
+// colors
+
+$grey: #a2a6b0;
+$white: #fff;
+
+body {
+	line-height: 1;
+	color: #fff;
+	font-family: "Poppins";
+	font-size: 13px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ------------------------------ */
+
+.main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: $containerWidth;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+//header
+.header {
+	&__top {
+	}
+
+	&__bottom {
+	}
+}
+
+.top-header {
+	background-color: #020202;
+	padding: 10px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		color: $grey;
+		font-size: 12px;
+		font-weight: 600;
+		row-gap: 15px;
+	}
+
+	a {
+		color: #fff;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	&__time {
+	}
+
+	&__address {
+	}
+
+	&__contact {
+	}
+}
+.time {
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	&__day {
+	}
+
+	&__clock {
+	}
+}
+.address {
+	padding: 0 18px;
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	&__office {
+	}
+
+	&__map {
+	}
+}
+.contact {
+	display: flex;
+	// justify-content: center;
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6px;
+	}
+
+	&__number {
+	}
+
+	&__facebook {
+	}
+
+	&__instagram {
+	}
+}
+.facebook {
+	&__image {
+	}
+}
+.instagram {
+	&__image {
+	}
+}
+.bottom-header {
+	&__container {
+	}
+
+	&__logo {
+	}
+}
